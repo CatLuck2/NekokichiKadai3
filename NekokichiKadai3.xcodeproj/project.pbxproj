@@ -56,15 +56,39 @@
 		A240328527CCB93B00F4088B /* NekokichiKadai3 */ = {
 			isa = PBXGroup;
 			children = (
+				A240329A27CCB95E00F4088B /* Model */,
+				A240329B27CCB96300F4088B /* View */,
+				A240329C27CCB96600F4088B /* Controller */,
 				A240328627CCB93B00F4088B /* AppDelegate.swift */,
 				A240328827CCB93B00F4088B /* SceneDelegate.swift */,
-				A240328A27CCB93B00F4088B /* ViewController.swift */,
-				A240328C27CCB93B00F4088B /* Main.storyboard */,
 				A240328F27CCB93D00F4088B /* Assets.xcassets */,
 				A240329127CCB93D00F4088B /* LaunchScreen.storyboard */,
 				A240329427CCB93D00F4088B /* Info.plist */,
 			);
 			path = NekokichiKadai3;
+			sourceTree = "<group>";
+		};
+		A240329A27CCB95E00F4088B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A240329B27CCB96300F4088B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A240328C27CCB93B00F4088B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A240329C27CCB96600F4088B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A240328A27CCB93B00F4088B /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
