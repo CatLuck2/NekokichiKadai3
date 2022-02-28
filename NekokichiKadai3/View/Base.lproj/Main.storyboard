@@ -36,7 +36,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-DD-qcT">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-DD-qcT">
                                                 <rect key="frame" x="21.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="toggleSignOfNum1:" destination="BYZ-38-t0r" eventType="valueChanged" id="jqc-nw-WwM"/>
@@ -59,7 +59,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Rz-KJ-cO6">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Rz-KJ-cO6">
                                                 <rect key="frame" x="18.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="toggleSignOfNum2:" destination="BYZ-38-t0r" eventType="valueChanged" id="OWp-G9-ehG"/>
@@ -86,6 +86,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="inputNum1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="f0I-i8-0an"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TiJ-jw-J6M">
                                         <rect key="frame" x="186" y="0.0" width="97" height="34"/>
@@ -95,6 +98,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="inputNum2:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ovQ-Ib-sH1"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
