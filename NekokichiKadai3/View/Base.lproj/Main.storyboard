@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="calculateAddition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMQ-oE-Q0b"/>
+                                    <action selector="displayCalculatedResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eR1-7q-hCY"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="RaL-IC-Nei">
