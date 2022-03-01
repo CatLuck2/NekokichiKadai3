@@ -87,7 +87,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="inputNum1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="f0I-i8-0an"/>
+                                            <action selector="inputNum1:" destination="BYZ-38-t0r" eventType="editingChanged" id="DGq-7A-WFY"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TiJ-jw-J6M">
@@ -99,7 +99,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="inputNum2:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ovQ-Ib-sH1"/>
+                                            <action selector="inputNum2:" destination="BYZ-38-t0r" eventType="editingChanged" id="UlR-W9-Clz"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -159,8 +159,6 @@
                     </view>
                     <connections>
                         <outlet property="calculatedResultLabel" destination="T0L-bw-qUr" id="VgI-zM-Pij"/>
-                        <outlet property="inputNum1" destination="Uy2-Pg-ATj" id="ATC-1b-fPN"/>
-                        <outlet property="inputNum2" destination="TiJ-jw-J6M" id="cN0-zt-Cvi"/>
                         <outlet property="num1Label" destination="bGd-JC-I1m" id="JNg-Sj-MWI"/>
                         <outlet property="num2Label" destination="Rqn-fQ-0yn" id="iiW-bg-M9M"/>
                     </connections>
