@@ -28,8 +28,8 @@ final class ViewController: UIViewController {
     @IBAction func displayCalculatedResult(_ sender: UIButton) {
         // 数値の符号を反転させる処理、計算処理などを一箇所にまとめた
         // 理由は、UITextFieldやUISwitchで行うと、処理の流れが複雑になってしまうため
-        let num1 = Int(inputNum1Field.text ?? "") ?? 0
-        let num2 = Int(inputNum2Field.text ?? "") ?? 0
+        let num1: Int = Int(inputNum1Field.text ?? "") ?? 0
+        let num2: Int = Int(inputNum2Field.text ?? "") ?? 0
         if case toggleSignOfNum1.isOn = true {
             calculateAdditionModel.setNum1(-num1)
         } else {
