@@ -16,17 +16,17 @@ final class ViewController: UIViewController {
     @IBOutlet weak private var calculatedResultLabel: UILabel!
 
     private var calculateAdditionModel: CalculateAdditionModel = CalculateAdditionModel()
-    
+
     // 数値を入力し、Modelのプロパティへ格納するので、動詞のinputを含めた
     // 引数のsenderでUITextFieldだと判別できるので、Fieldなどの単語は含めず
     @IBAction func inputNum1(_ sender: UITextField) {
         calculateAdditionModel.setNum1(Int(sender.text ?? "") ?? 0)
     }
-    
+
     @IBAction func inputNum2(_ sender: UITextField) {
         calculateAdditionModel.setNum2(Int(sender.text ?? "") ?? 0)
     }
-    
+
     // 数値の符号（英語：sign）を反転（英語：toggle）する
     @IBAction func toggleSignOfNum1(_ sender: UISwitch) {
         // Switch文だとdefaultまで含めてしまうので、パターンマッチで実装
@@ -37,7 +37,7 @@ final class ViewController: UIViewController {
             calculateAdditionModel.setNum1(abs(calculateAdditionModel.num1))
         }
     }
-    
+
     @IBAction func toggleSignOfNum2(_ sender: UISwitch) {
         if case sender.isOn = true {
             calculateAdditionModel.setNum2(-abs(calculateAdditionModel.num2))
@@ -45,7 +45,7 @@ final class ViewController: UIViewController {
             calculateAdditionModel.setNum2(abs(calculateAdditionModel.num2))
         }
     }
-    
+
     // 計算結果をUILabelで表示させるので、動詞のdisplayを使用
     @IBAction func displayCalculatedResult(_ sender: UIButton) {
         num1Label.text = "\(calculateAdditionModel.num1)"
@@ -53,4 +53,3 @@ final class ViewController: UIViewController {
         calculatedResultLabel.text = "\(calculateAdditionModel.result())"
     }
 }
-
