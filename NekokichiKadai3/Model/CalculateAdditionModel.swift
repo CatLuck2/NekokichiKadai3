@@ -19,7 +19,6 @@ struct CalculateAdditionModel {
     mutating func setNum1(_ value1: Int) {
         num1 = value1
     }
-
     mutating func setNum2(_ value2: Int) {
         num2 = value2
     }

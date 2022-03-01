@@ -38,9 +38,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-DD-qcT">
                                                 <rect key="frame" x="21.5" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="toggleSignOfNum1:" destination="BYZ-38-t0r" eventType="valueChanged" id="jqc-nw-WwM"/>
-                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YU-rP-jpr">
                                                 <rect key="frame" x="81.5" y="0.0" width="8" height="31"/>
@@ -61,9 +58,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Rz-KJ-cO6">
                                                 <rect key="frame" x="18.5" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="toggleSignOfNum2:" destination="BYZ-38-t0r" eventType="valueChanged" id="OWp-G9-ehG"/>
-                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq9-fe-ivv">
                                                 <rect key="frame" x="75.5" y="0.0" width="8" height="31"/>
@@ -86,9 +80,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="inputNum1:" destination="BYZ-38-t0r" eventType="editingChanged" id="DGq-7A-WFY"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TiJ-jw-J6M">
                                         <rect key="frame" x="186" y="0.0" width="97" height="34"/>
@@ -98,9 +89,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="inputNum2:" destination="BYZ-38-t0r" eventType="editingChanged" id="UlR-W9-Clz"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -159,8 +147,12 @@
                     </view>
                     <connections>
                         <outlet property="calculatedResultLabel" destination="T0L-bw-qUr" id="VgI-zM-Pij"/>
+                        <outlet property="inputNum1Field" destination="Uy2-Pg-ATj" id="ILX-Wi-2yd"/>
+                        <outlet property="inputNum2Field" destination="TiJ-jw-J6M" id="QTB-sz-1om"/>
                         <outlet property="num1Label" destination="bGd-JC-I1m" id="JNg-Sj-MWI"/>
                         <outlet property="num2Label" destination="Rqn-fQ-0yn" id="iiW-bg-M9M"/>
+                        <outlet property="toggleSignOfNum1" destination="w8y-DD-qcT" id="wRw-zN-mq2"/>
+                        <outlet property="toggleSignOfNum2" destination="7Rz-KJ-cO6" id="dNh-h8-8yy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
