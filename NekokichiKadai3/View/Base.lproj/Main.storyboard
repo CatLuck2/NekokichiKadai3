@@ -146,13 +146,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calculatedResultLabel" destination="T0L-bw-qUr" id="VgI-zM-Pij"/>
-                        <outlet property="inputNum1Field" destination="Uy2-Pg-ATj" id="ILX-Wi-2yd"/>
-                        <outlet property="inputNum2Field" destination="TiJ-jw-J6M" id="QTB-sz-1om"/>
-                        <outlet property="num1Label" destination="bGd-JC-I1m" id="JNg-Sj-MWI"/>
-                        <outlet property="num2Label" destination="Rqn-fQ-0yn" id="iiW-bg-M9M"/>
-                        <outlet property="toggleSignOfNum1" destination="w8y-DD-qcT" id="wRw-zN-mq2"/>
-                        <outlet property="toggleSignOfNum2" destination="7Rz-KJ-cO6" id="dNh-h8-8yy"/>
+                        <outlet property="calculatedResultLabel" destination="T0L-bw-qUr" id="C1m-l4-ofK"/>
+                        <outlet property="num1Label" destination="bGd-JC-I1m" id="pXj-lY-wCb"/>
+                        <outlet property="num1TextField" destination="Uy2-Pg-ATj" id="XRe-jJ-hlo"/>
+                        <outlet property="num2Label" destination="Rqn-fQ-0yn" id="QxK-Ha-yC9"/>
+                        <outlet property="num2TextField" destination="TiJ-jw-J6M" id="y52-OM-CmY"/>
+                        <outlet property="signOfNum1Switch" destination="w8y-DD-qcT" id="sdD-1E-mAm"/>
+                        <outlet property="signOfNum2Switch" destination="7Rz-KJ-cO6" id="XxO-aG-gnV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
